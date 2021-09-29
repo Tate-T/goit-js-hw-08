@@ -10,10 +10,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "https://github.com/Tate-T/goit-js-hw-08"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Tate-T <tatjana.tarasovych@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
