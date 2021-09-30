@@ -5,8 +5,6 @@ import { galleryItems } from './gallery-items';
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 
-console.log(galleryItems);
-
 const galleryRef = document.querySelector('.gallery');
 
 const listItemsMarkup = createListMarkup(galleryItems);
@@ -27,8 +25,6 @@ function createListMarkup(items) {
 }
 
 galleryRef.insertAdjacentHTML('beforeend', listItemsMarkup);
-
-
 
 const lightbox = new SimpleLightbox('.gallery a', {
     captions: true,
