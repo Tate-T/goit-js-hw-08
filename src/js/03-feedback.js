@@ -45,7 +45,7 @@ const onSubmit = function (e) {
     e.preventDefault();
 
     const formData = new FormData(e.currentTarget);
-    const { name, value } = e.target;
+    const { name, value } = e.currentTarget;
     console.log(`${data[name]}: ${value}`);
     e.currentTarget.reset();
     data = {};
