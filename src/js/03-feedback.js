@@ -45,8 +45,8 @@ const onSubmit = function (e) {
     e.preventDefault();
 
     const formData = new FormData(e.currentTarget);
-    const { name, value } = e.currentTarget;
-    console.log(`${data[name]}: ${value}`);
+
+    console.log(getSavedData);
     e.currentTarget.reset();
     data = {};
     localStorage.removeItem(FORM_KEY);
