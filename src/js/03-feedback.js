@@ -46,11 +46,11 @@ const onSubmit = function (e) {
 
     const formData = new FormData(e.currentTarget);
 
-    console.log(getSavedData);
+    console.log(formData);
     e.currentTarget.reset();
     data = {};
     localStorage.removeItem(FORM_KEY);
 };
 
-formRef.addEventListener('input', throttle(onInput), 500);
+formRef.addEventListener('input', throttle(onInput, 500));
 formRef.addEventListener('submit', onSubmit);
