@@ -8,7 +8,7 @@ let data = {};
 const getSavedData = function (key) {
     try {
         const savedData = localStorage.getItem(key);
-        const parsedData = JSON.parse(savedData) ?? {};
+        const parsedData = JSON.parse(savedData);
         return parsedData;
     } catch (error) {
         console.log(error);
@@ -45,7 +45,8 @@ const onSubmit = function (e) {
     e.preventDefault();
 
     const formData = new FormData(e.currentTarget);
-
+    const { name, value } = e.target;
+    console.log(`${data[name]}: ${value}`);
     e.currentTarget.reset();
     data = {};
     localStorage.removeItem(FORM_KEY);
