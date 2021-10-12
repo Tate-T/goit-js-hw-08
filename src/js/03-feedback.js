@@ -17,7 +17,7 @@ const getSavedData = function (key) {
 };
 
 const populateData = function () {
-    const savedData = getSavedData(FORM_KEY);
+    const savedData = getSavedData(FORM_KEY) ?? {};
     data = savedData;
 
     const inputNames = Object.keys(data);
@@ -46,7 +46,7 @@ const onSubmit = function (e) {
 
     const formData = new FormData(e.currentTarget);
 
-    console.log(formData);
+    console.log(data);
     e.currentTarget.reset();
     data = {};
     localStorage.removeItem(FORM_KEY);
