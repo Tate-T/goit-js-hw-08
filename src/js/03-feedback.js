@@ -17,7 +17,7 @@ const getSavedData = function (key) {
 };
 
 const populateData = function () {
-    const savedData = getSavedData(FORM_KEY) ?? {};
+    const savedData = getSavedData(FORM_KEY);
     data = savedData;
 
     const inputNames = Object.keys(data);
