@@ -8,7 +8,7 @@ let data = {};
 const getSavedData = function (key) {
     try {
         const savedData = localStorage.getItem(key);
-        const parsedData = JSON.parse(savedData) ?? {};
+        const parsedData = savedData ? JSON.parse(savedData) : {};
         return parsedData;
     } catch (error) {
         console.log(error);
